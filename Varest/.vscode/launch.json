@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Varest (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Varest Mac Debug Build",
+			"program": "/Users/game-dev057/Documents/Unreal Projects/Varest/Binaries/Mac/Varest-Mac-Debug.app/Contents/MacOS/Varest-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "Varest (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Varest Mac DebugGame Build",
+			"program": "/Users/game-dev057/Documents/Unreal Projects/Varest/Binaries/Mac/Varest-Mac-DebugGame.app/Contents/MacOS/Varest-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "Varest (Development)",
+			"request": "launch",
+			"preLaunchTask": "Varest Mac Development Build",
+			"program": "/Users/game-dev057/Documents/Unreal Projects/Varest/Binaries/Mac/Varest.app/Contents/MacOS/Varest",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "Varest (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Varest Mac Shipping Build",
+			"program": "/Users/game-dev057/Documents/Unreal Projects/Varest/Binaries/Mac/Varest-Mac-Shipping.app/Contents/MacOS/Varest-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "Varest (Test)",
+			"request": "launch",
+			"preLaunchTask": "Varest Mac Test Build",
+			"program": "/Users/game-dev057/Documents/Unreal Projects/Varest/Binaries/Mac/Varest-Mac-Test.app/Contents/MacOS/Varest-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "VarestEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "VarestEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.21/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "VarestEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "VarestEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.21/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "VarestEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "VarestEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.21/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.21"
+		}
+	]
+}

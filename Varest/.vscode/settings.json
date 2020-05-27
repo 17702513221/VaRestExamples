@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/Users/game-dev057/Documents/Unreal Projects/Varest/Content": true,
+		"/Users/game-dev057/Documents/Unreal Projects/Varest/.vscode": true,
+		"/Users/game-dev057/Documents/Unreal Projects/Varest/Intermediate": true
+	}
+}

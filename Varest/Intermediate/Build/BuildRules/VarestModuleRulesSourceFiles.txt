@@ -1,0 +1,3 @@
+/Users/game-dev057/Documents/Unreal Projects/Varest/Source/Varest/Varest.Build.cs
+/Users/game-dev057/Documents/Unreal Projects/Varest/Source/VarestEditor.Target.cs
+/Users/game-dev057/Documents/Unreal Projects/Varest/Source/Varest.Target.cs

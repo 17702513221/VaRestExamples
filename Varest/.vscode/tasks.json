@@ -1,0 +1,995 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Varest Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"Mac",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"IOS",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Shipping",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Varest HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "Varest HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Varest",
+				"HTML5",
+				"Test",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VarestEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"Debug",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VarestEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VarestEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		},
+		{
+			"label": "VarestEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"VarestEditor",
+				"Mac",
+				"Development",
+				"/Users/game-dev057/Documents/Unreal Projects/Varest/Varest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.21"
+			}
+		}
+	]
+}
